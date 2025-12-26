@@ -1,11 +1,92 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Скоро тут будет сайт</h1>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автосалон</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">CarPack</div>
+        <ul class="nav-links">
+          <li><a href="#главная">Главная</a></li>
+          <li><a href="#каталог">Каталог</a></li>
+
+          <li><a href="#контакты">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="главная" class="hero">
+      <div class="container">
+        <h1>Добро пожаловать в CarPack!</h1>
+        <p>Разнообразный выбор автомобилей на любой вкус и бюджет!</p>
+        <a href="#каталог" class="btn">Смотреть авто</a>
+      </div>
+    </section>
+
+    <section id="каталог" class="container">
+      <h2>Популярные авто</h2>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/lada-niva-sport-1-model.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h3>Лада Нива</h3>
+            <div class="product-price">990 000 ₽</div>
+            <a href="Niva.html" class="btn">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/456x342.webp" alt="" />
+          </div>
+          <div class="product-info">
+            <h3>Беха м5</h3>
+            <div class="product-price">7 990 000 ₽</div>
+            <a href="bmw.html" class="btn">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/xkfjq7ecczs3cf9nk7uu9cgmpqwcvows.webp" alt="" />
+          </div>
+          <div class="product-info">
+            <h3>Ламба</h3>
+            <div class="product-price">50 000 000 ₽</div>
+            <a href="lamba.html" class="btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="контакты" class="contact">
+      <h2>Оставьте заявку, и мы подберем авто для вас!</h2>
+      <form>
+        <div class="form-group">
+          <label>Имя:</label>
+          <input type="text" required />
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" required />
+        </div>
+        <div class="form-group">
+          <label>Сообщение:</label>
+          <textarea rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 CarPack | Тел: +7 (999) 999 99 99</p>
+    </footer>
+  </body>
 </html>
